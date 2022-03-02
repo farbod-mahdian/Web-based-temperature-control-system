@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>TPJ-Project</title>
+  <link rel="stylesheet" href="setTemp.css" />
+</head>
+
+<body>
+    <div>
+    <form method="post" action="cgi-bin/setTemp2.py">
+        <p>Enter the maximum temperature (between 0 and 100):
+            <input type="number" name="maxTemp" /><br />
+            Enter the minimum temperature (between 0 and 100):
+            <input type="number" name="minTemp" />
+        </p>
+
+        <p>
+            <input id="submitBtn" type="submit" name="submit" value="Submit"/>
+        </p>
+    </form>
+    </div>
+</body>
+
+</html>

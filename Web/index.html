@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="refresh" content="5">
+  <title>TPJ-Project</title>
+  <link rel="stylesheet" href="stylesV3.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="monitor">
+      <h1 id="temperature">25.00&#8451;</h1>
+      <div id="logo" style="--temperature: 25.00"></div>
+      <div id="logo2">
+        <img id="heating_on" class="hidden" src="images/heatingOn.gif" alt="heating system on">
+        <img id="cooling_on" class="hidden" src="images/coolingOn.gif" alt="cooling system on">
+      </div>
+    </div>
+    <div id="cooling">
+      <div id="coolTemp" style="--temperature: 24.00"><p id="low">24.00&#8451;</p></div>
+    </div>
+    <div id="heating">
+      <div id="heatTemp" style="--temperature: 26.00"><p id="high">26.00&#8451;</p></div>
+    </div>
+    <button id="submitBtn" name="submit">Edit temperatures</button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
+input {
+  width: 60px;
+  padding: 12px 12px;
+  margin: 8px 0;
+}
+
+#submitBtn {
+  position: absolute;
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  width: 90px;
+  border-radius: 10px;
+}
+
+#submitBtn:hover {
+  color: black;
+  background-color: #01dd8c;
+}
+
+div {
+  border: 3px solid #04aa6d;
+  padding: 16px;
+  border-radius: 8px;
+  width: 550px;
+  max-width: 90%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

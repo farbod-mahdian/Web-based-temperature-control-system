@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+
+h1 {
+  font-size: 70px;
+  color: white;
+  padding: 16px;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+  width: 50px;
+  height: 500px;
+  background-color: white;
+  border-radius: 1.5em;
+  color: white;
+  padding: 16px;
+  max-width: 90%;
+  margin: 0;
+  position: absolute;
+  bottom: 70px;
+  left: 100px;
+}
+
+#logo::before {
+  content: '';
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  bottom: 16px;
+  height: calc(var(--temperature) * 1%);
+  min-height: 0.1em;
+  max-height: calc(100% - 20px);
+  background-color: red;
+  border-radius: 1em;
+}
+
+#logo2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 100px;
+  color: white;
+  padding: 16px;
+  max-width: 90%;
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 75px;
+}
+
+#monitor {
+  left: 125px;
+  position: absolute;
+  width: 250px;
+  height: 700px;
+}
+
+#cooling {
+  position: absolute;
+  width: 90px;
+  height: 490px;
+  bottom: 120px;
+  left: 135px;
+}
+
+#coolTemp {
+  position: absolute;
+  width: 80px;
+  height: calc(var(--temperature) * 1%);
+  margin: 0;
+  bottom: 14px;
+  max-height: 490px;
+}
+
+#coolTemp p {
+  font-size: 25px;
+  color: rgb(0, 162, 255);
+  margin: 0;
+  text-decoration: overline;
+}
+
+#heating {
+  position: absolute;
+
+  width: 90px;
+
+  height: 490px;
+  bottom: 120px;
+
+  right: 130px;
+}
+
+#heatTemp {
+  position: absolute;
+  width: 80px;
+  height: calc(var(--temperature) * 1%);
+  margin: 0;
+  bottom: 35px;
+  max-height: 490px;
+}
+
+#heatTemp p {
+  font-size: 25px;
+  color: rgb(255, 60, 0);
+  margin: 0;
+  text-decoration: underline;
+}
+
+#main {
+  position: relative;
+  width: 500px;
+  height: 750px;
+  margin: auto;
+}
+
+#submitBtn {
+  position: absolute;
+  background-color: #04aaa2;
+  color: white;
+  padding: 14px 20px;
+  bottom: 0;
+  left: 125px;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  border-radius: 10px;
+}
+
+#submitBtn:hover {
+  color: black;
+  background-color: #00d6cb;
+}
+
+img {
+  position: absolute;
+  height: 80px;
+  bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline;
+}
